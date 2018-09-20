@@ -9,6 +9,8 @@ namespace Toogler
     public interface IConfigurationManager
     {
        string GetConfigurationValue(string buttonName);
-       
+
+
+       bool setConfigurationValue(string buttonName, bool buttonEnabled);
     }
 }

@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace Toogler
 {
-    class FeatureButtonNotFoundException : Exception
+    class ButtonFeatureNotFoundException : Exception
     {
             private readonly string _buttonFeatureName;
-            public FeatureButtonNotFoundException(string buttonName)
+            public ButtonFeatureNotFoundException(string featureName)
             {
-                _buttonFeatureName = buttonName;
+                _buttonFeatureName = featureName;
             }
+
         
     }
 }

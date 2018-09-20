@@ -41,7 +41,7 @@
   <ItemGroup>
     <Compile Include="ButtonFeature.cs" />
     <Compile Include="ConfigurationFile.cs" />
-    <Compile Include="FeatureButtonNotFoundException.cs" />
+    <Compile Include="ButtonFeatureNotFoundException.cs" />
     <Compile Include="IButtonFeature.cs" />
     <Compile Include="IConfigurationManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

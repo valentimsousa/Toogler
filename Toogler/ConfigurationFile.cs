@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Toogler
 {
-    class ConfigurationFile : IConfigurationManager
+    public class ConfigurationFile : IConfigurationManager
     {
         public string GetConfigurationValue(string buttonName)
         {
-            //obter o valor do ficheiro
+            //read file
             /*
              * ButtonBlue: 1
              * ButtonGreen: 0
@@ -19,5 +19,14 @@ namespace Toogler
              */
             return "1";
         }
+
+        public bool setConfigurationValue(string buttonName, bool buttonEnabled)
+        {
+            //throw new NotImplementedException();
+            //add to file
+            return true;
+        }
+
+
     }
 }

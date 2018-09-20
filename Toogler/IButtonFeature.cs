@@ -9,7 +9,9 @@ namespace Toogler
 
     public interface IButtonFeature
     {
-        bool IsButtonEnabled(string buttonName);
+        bool IsButtonEnabled(string featureName);
+        bool SetButtonFeature(string featureName, bool featureEnabled);
+
     }
 }
 

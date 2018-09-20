@@ -13,12 +13,17 @@ namespace Toogler
         {
             _configuration = configuration;
         }
-        public bool IsButtonEnabled(string buttonName)
+        public bool SetButtonFeature(string featureName, bool featureEnabled)
         {
-            var buttonValue = _configuration.GetConfigurationValue(buttonName);
+            return _configuration.setConfigurationValue(featureName, featureEnabled);
+        }
+
+        public bool IsButtonEnabled(string featureName)
+        {
+            var buttonValue = _configuration.GetConfigurationValue(featureName);
             if (string.IsNullOrWhiteSpace(buttonValue))
             {
-                throw new FeatureButtonNotFoundException(buttonName);
+                throw new ButtonFeatureNotFoundException(featureName);
             }
 
 
