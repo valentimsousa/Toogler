@@ -6,7 +6,7 @@ To configure features:
              * ButtonGreen: 0
              * ButtonRed: 0
 
-IButtonFeature is a interface with "IsButtonEnabled" prop, which read the configuration and returns a value (true/false). 
+IButtonFeature is a interface with "IsButtonEnabled" prop, which read the configuration and returns a value (true/false) and a "setConfigurationValue" prop. 
 If configuration name not exists it will throw a ButtonFeatureNotFoundException.
 ButtonFeature is the implementation of IButtonFeature.
 
