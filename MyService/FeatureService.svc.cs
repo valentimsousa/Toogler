@@ -43,6 +43,7 @@ namespace MyService
 
         public string ABC(int t)
         {
+
             //do something 
             //....
             AddNewFeature("isButtonYellow", false);
@@ -60,6 +61,11 @@ namespace MyService
             {
                 composite.StringValue += "Suffix";
             }
+
+            //do something 
+            //....
+            AddNewFeature("isButtonYellow", true);
+
             return composite;
         }
     }
